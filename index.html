@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Studio Makijażu Permanentnego „Permanentspace”</title>
+  <style>
+    /* Reset i podstawowe style */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+    header, section, footer { padding: 40px 20px; }
+    header { background: #f8f0e9; text-align: center; }
+    h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    p.lead { font-size: 1.2rem; margin-bottom: 20px; }
+    nav a { margin: 0 10px; text-decoration: none; color: #555; }
+    nav a:hover { color: #000; }
+    /* Sekcje */
+    #services { background: #fff; }
+    .service-list { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .service { flex: 1 1 200px; padding: 20px; border: 1px solid #eee; border-radius: 8px; }
+    #gallery img { width: 100%; max-width: 300px; border-radius: 8px; }
+    #contact { background: #f0f0f0; text-align: center; }
+    form { display: inline-block; text-align: left; margin-top: 20px; }
+    form input, form textarea { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; }
+    form button { padding: 10px 20px; border: none; border-radius: 4px; background: #a67c52; color: #fff; cursor: pointer; }
+    form button:hover { background: #8c613f; }
+    /* Stopka */
+    footer { text-align: center; font-size: .9rem; background: #222; color: #aaa; }
+    /* Responsywność */
+    @media (max-width: 600px) {
+      .service-list { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Permanentspace</h1>
+    <p class="lead">Profesjonalny makijaż permanentny w Śremie</p>
+    <nav>
+      <a href="#services">Usługi</a>
+      <a href="#gallery">Galeria</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
+
+  <section id="services">
+    <h2>Nasze usługi</h2>
+    <div class="service-list">
+      <div class="service">
+        <h3>Makijaż permanentny</h3>
+        <p>Kompleksowa usługa makijażu permanentnego: brwi, usta, kreski.</p>
+      </div>
+      <div class="service">
+        <h3>Brwi</h3>
+        <p>Stylizacja i korekta dowolnej trudności.</p>
+      </div>
+      <div class="service">
+        <h3>Usta</h3>
+        <p>Soczyste kontury i równomierne nasycenie pigmentem.</p>
+      </div>
+      <div class="service">
+        <h3>Kreski</h3>
+        <p>Idealne linie podkreślające Twoje piękno.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Portfolio</h2>
+    <div class="service-list">
+      <img src="https://via.placeholder.com/300x200?text=Praca+1" alt="Przykład pracy 1">
+      <img src="https://via.placeholder.com/300x200?text=Praca+2" alt="Przykład pracy 2">
+      <img src="https://via.placeholder.com/300x200?text=Praca+3" alt="Przykład pracy 3">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Kontakt i zapisy</h2>
+    <p>Adres: ul. Przykładowa 12, Warszawa, Polska</p>
+    <!-- Wklej tutaj kod embed Google Maps -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2448.1234567890123!2d21.0123456!3d52.229675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eccabcdef1234%3A0xabcdef1234567890!2sWarszawa!5e0!3m2!1spl!2spl!4v0000000000000"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <form action="mailto:permanent.space.pl@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="Imię" placeholder="Twoje imię" required>
+      <input type="tel" name="Telefon" placeholder="Telefon" required>
+      <textarea name="Wiadomość" rows="4" placeholder="Wiadomość"></textarea>
+      <button type="submit">Wyślij</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 PermanentSpace · Telefon: +48 570656490 · E-mail: permanent.space.pl@gmail.com
+  </footer>
+
+</body>
+</html>
